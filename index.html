@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clash Army Builder</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Clash Army Builder</h1>
+    <label for="unitname">Unit Name:</label>
+    <input type="text" id="unitname" name="unitname">
+
+    <label for="base">Base:</label>
+    <select name="base" id="base">
+      <option value="1">No Armor</option>
+      <option value="2">Armor Only</option>
+      <option value="2">Shield Only</option>
+      <option value="4">Armor & Shield</option>
+      <option value="8">Heavily Armored</option>
+    </select>
+
+    <label for="fortitude">Fortitude:</label>
+    <select name="fortitude" id="fortitude">
+        <option value="2">Light/Skirmisher</option>
+        <option value="4">Trained</option>
+        <option value="8">Elite</option>
+    </select>
+
+    <label for="weapon">Weapon:</label>
+    <select name="weapon" id="weapon">
+        <option value="0">Melee</option>
+        <option value="0">Ranged</option>
+        <option value="3">Both</option>
+    </select>
+
+    <label for="leader">Leader:</label>
+    <select name="leader" id="leader">
+        <option value="0">not leader</option>
+        <option value="10">First leader</option>
+        <option value="7">Sub Leader</option>
+    </select>
+
+    <label for="unittype">Unit Type:</label>
+    <select name="unittype" id="unittype">
+        <option value="0">Standard</option>
+        <option value="3">Chariot</option>
+        <option value="5">Cavalry</option>
+        <option value="7">Elephant</option>
+    </select>
+
+    <label for="unitorg">Unit Org:</label>
+    <select name="unitorg" id="unitorg">
+        <option value="0">Open</option>
+        <option value="2">Skirmish</option>
+        <option value="3">Drilled</option>
+    </select>
+
+    <P>Plus 5<br>
+    <input type="checkbox" id="veteran" value="5">Veteran
+    <input type="checkbox" id="combined" value="5">Combined
+    <input type="checkbox" id="parthian" value="5">Parthian Shot
+    <input type="checkbox" id="ferocious" value="5">Ferocious Charge
+    
+    
+    <br>Plus 3<br>
+    <input type="checkbox" id="phalanx" value="3">Phalanx
+    <input type="checkbox" id="javelins" value="3">Javelins
+    <input type="checkbox" id="warband" value="3">Warband
+    <input type="checkbox" id="shieldwall" value="3">Shield Wall
+    
+    <br>Plus 10<br>
+    <input type="checkbox" id="fanactics" value="10">Fanactics
+    <p>
+    <button type="button" name="calc" id="calc">Calc</button>
+    <button type="button" name="add" id="add">Add</button>
+    <button type="button" name="reset" id="reset">Reset</button>
+
+    <p>Unit Cost: <span id="unitcost">0</span>
+    <p><h2>Army List</h2></p>
+    <h4>Total Cost:<span id="totalcost">0</span></h3>
+    <table class="tg">
+
+    </table>
+
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+</body>
+</html>
